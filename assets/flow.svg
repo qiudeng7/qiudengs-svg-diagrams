@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="850" viewBox="0 0 1280 850" role="img" aria-labelledby="title desc">
+<title id="title">业务流程图</title><desc id="desc">软件开发中等复杂度示例；仅用于模板学习，不代表已确认方案。</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="context-stroke"/></marker></defs>
+
+<style>
+text{font-family:Arial,"Noto Sans CJK SC","Microsoft YaHei",sans-serif;font-size:18px;fill:#25313A}
+.box{fill:white;stroke:#52616D;stroke-width:1.4}
+.line{fill:none;stroke:#52616D;stroke-width:1.6}
+.dashed{stroke-dasharray:6 5}.small{font-size:14px}.heading{font-size:26px;font-weight:600}
+.panel{fill:#F5F7FA;stroke:#CBD5DF;stroke-width:1}
+.guide{fill:none;stroke:#CBD5DF;stroke-width:1}
+.blue{stroke:#426B91}.purple{stroke:#786783}.teal{stroke:#477C80}.brown{stroke:#8A735C}
+.green{stroke:#327354}.red{stroke:#AA4E4E}.yellow{stroke:#926D20}
+.box.green{fill:#EDF5EF}.box.red{fill:#FAEEEE}.box.yellow{fill:#FBF5E5}
+.caption{paint-order:stroke;stroke:white;stroke-width:7px;stroke-linejoin:round}
+</style>
+<rect width="1280" height="850" fill="white"/>
+<text x="40" y="48" class="heading">业务流程图</text>
+<rect x="40" y="125" width="1190" height="625" class="panel"/><path d="M370 125 V750 M820 125 V750 M40 180 H1230" class="guide"/><text x="205" y="160" class="small" text-anchor="middle">用户</text><text x="595" y="160" class="small" text-anchor="middle">业务服务</text><text x="1025" y="160" class="small" text-anchor="middle">模型网关</text><rect x="95" y="220" width="220" height="55" class="box"/><text x="205" y="253.5" text-anchor="middle">选择模型并发送</text><path d="M590 202 L680 247 L590 292 L500 247 Z" class="box"/><text x="590" y="252" class="small" text-anchor="middle">准入通过？</text><rect x="905" y="220" width="235" height="55" class="box"/><text x="1022.5" y="253.5" text-anchor="middle">开始生成</text><rect x="480" y="375" width="220" height="55" class="box"/><text x="590" y="408.5" text-anchor="middle">说明拒绝原因</text><rect x="90" y="375" width="225" height="55" class="box"/><text x="202.5" y="408.5" text-anchor="middle">登录 / 充值 / 换模型</text><path d="M1020 435 L1110 480 L1020 525 L930 480 Z" class="box"/><text x="1020" y="485" class="small" text-anchor="middle">生成成功？</text><rect x="480" y="535" width="220" height="55" class="box"/><text x="590" y="568.5" text-anchor="middle">返回回答与调用编号</text><rect x="90" y="535" width="225" height="55" class="box"/><text x="202.5" y="568.5" text-anchor="middle">查看回答</text><rect x="910" y="650" width="220" height="55" class="box"/><text x="1020" y="683.5" text-anchor="middle">返回错误或中断信息</text><rect x="90" y="650" width="225" height="55" class="box purple"/><text x="202.5" y="683.5" text-anchor="middle">查看异常并决定重试</text><path d="M315 247 H500" class="line blue" marker-end="url(#arrow)"/><path d="M680 247 H905" class="line blue" marker-end="url(#arrow)"/><text x="780" y="231" class="small" text-anchor="middle">是</text><path d="M590 292 V375" class="line purple dashed" marker-end="url(#arrow)"/><text x="612" y="340" class="small" text-anchor="middle">否</text><path d="M480 402 H315" class="line purple dashed" marker-end="url(#arrow)"/><path d="M90 402 H65 V247 H95" class="line purple dashed" marker-end="url(#arrow)"/><path d="M1020 275 V435" class="line blue" marker-end="url(#arrow)"/><path d="M930 480 L700 562" class="line blue" marker-end="url(#arrow)"/><text x="805" y="506" class="small" text-anchor="middle">是</text><path d="M480 562 H315" class="line blue" marker-end="url(#arrow)"/><path d="M1020 525 V650" class="line purple dashed" marker-end="url(#arrow)"/><text x="1040" y="603" class="small" text-anchor="middle">否</text><path d="M910 677 L315 685" class="line purple dashed" marker-end="url(#arrow)"/><text x="608" y="710" class="small" text-anchor="middle">显示异常；用户决定是否重试</text>
+</svg>

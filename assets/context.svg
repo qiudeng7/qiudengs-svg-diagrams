@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="850" viewBox="0 0 1280 850" role="img" aria-labelledby="title desc">
+<title id="title">系统上下文图</title><desc id="desc">软件开发中等复杂度示例；仅用于模板学习，不代表已确认方案。</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="context-stroke"/></marker></defs>
+
+<style>
+text{font-family:Arial,"Noto Sans CJK SC","Microsoft YaHei",sans-serif;font-size:18px;fill:#25313A}
+.box{fill:white;stroke:#52616D;stroke-width:1.4}
+.line{fill:none;stroke:#52616D;stroke-width:1.6}
+.dashed{stroke-dasharray:6 5}.small{font-size:14px}.heading{font-size:26px;font-weight:600}
+.panel{fill:#F5F7FA;stroke:#CBD5DF;stroke-width:1}
+.guide{fill:none;stroke:#CBD5DF;stroke-width:1}
+.blue{stroke:#426B91}.purple{stroke:#786783}.teal{stroke:#477C80}.brown{stroke:#8A735C}
+.green{stroke:#327354}.red{stroke:#AA4E4E}.yellow{stroke:#926D20}
+.box.green{fill:#EDF5EF}.box.red{fill:#FAEEEE}.box.yellow{fill:#FBF5E5}
+.caption{paint-order:stroke;stroke:white;stroke-width:7px;stroke-linejoin:round}
+</style>
+<rect width="1280" height="850" fill="white"/>
+<text x="40" y="48" class="heading">系统上下文图</text>
+<rect x="445" y="280" width="330" height="260" class="box purple"/><text x="610" y="416" text-anchor="middle">模型服务平台</text>
+<text x="610" y="448" class="small" text-anchor="middle">统一身份、模型访问与结算</text>
+<rect x="40" y="155" width="210" height="70" class="box blue"/><text x="145" y="196" text-anchor="middle">独立登录用户</text>
+<rect x="40" y="375" width="210" height="70" class="box blue"/><text x="145" y="416" text-anchor="middle">平台管理员</text>
+<rect x="40" y="650" width="210" height="70" class="box blue"/><text x="145" y="691" text-anchor="middle">合作应用</text>
+<rect x="1010" y="155" width="230" height="70" class="box teal"/><text x="1125" y="196" text-anchor="middle">模型供应方</text>
+<rect x="1010" y="375" width="230" height="70" class="box teal"/><text x="1125" y="416" text-anchor="middle">支付服务</text>
+<rect x="1010" y="650" width="230" height="70" class="box teal"/><text x="1125" y="691" text-anchor="middle">用量日志服务</text>
+<path d="M250 205 L445 325" class="line blue" marker-end="url(#arrow)"/>
+<text x="340" y="225" class="small" text-anchor="middle">浏览 / 聊天 / 账单</text>
+<path d="M250 410 L445 410" class="line blue" marker-end="url(#arrow)"/>
+<text x="345" y="391" class="small" text-anchor="middle">配置模型与权限</text>
+<path d="M250 670 L445 500" class="line blue" marker-end="url(#arrow)"/>
+<text x="355" y="642" class="small" text-anchor="middle">申请用户访问凭证</text>
+<path d="M775 325 L1010 205" class="line teal" marker-end="url(#arrow)"/>
+<text x="890" y="225" class="small" text-anchor="middle">模型调用</text>
+<path d="M775 402 L1010 402" class="line teal" marker-end="url(#arrow)"/>
+<path d="M1010 418 L775 418" class="line teal" marker-end="url(#arrow)"/>
+<text x="892" y="382" class="small" text-anchor="middle">创建充值订单</text>
+<text x="892" y="449" class="small" text-anchor="middle">支付结果回调</text>
+<path d="M1010 670 L775 500" class="line teal" marker-end="url(#arrow)"/>
+<text x="892" y="643" class="small" text-anchor="middle">推送调用用量</text>
+
+</svg>

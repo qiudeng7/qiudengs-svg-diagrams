@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="500" viewBox="0 0 1280 500" role="img" aria-labelledby="title desc">
+<title id="title">反例：平均排布忽略共享关系</title><desc id="desc">组件布局示例；文字说明见绘图规则文档。</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#426B91"/></marker></defs>
+<style>text{font:18px Arial,"Microsoft YaHei",sans-serif;fill:#25313A}.heading{font-size:26px;font-weight:600}.small{font-size:14px}.box{fill:white;stroke:#426B91;stroke-width:1.4}.panel{fill:#F5F7FA;stroke:#CBD5DF}.label{fill:#E9EEF3;stroke:#CBD5DF}.edge{fill:none;stroke:#426B91;stroke-width:1.6}</style>
+<rect width="1280" height="500" fill="white"/>
+<text x="40" y="48" class="heading">反例：平均排布忽略共享关系</text>
+<rect x="270" y="130" width="240" height="65" class="box"/><text x="390" y="168.5" text-anchor="middle">用户模型目录</text><rect x="730" y="130" width="240" height="65" class="box"/><text x="850" y="168.5" text-anchor="middle">聊天请求入口</text><rect x="170" y="350" width="200" height="65" class="box"/><text x="270" y="388.5" text-anchor="middle">身份 / 权限</text><rect x="520" y="350" width="200" height="65" class="box"/><text x="620" y="388.5" text-anchor="middle">模型配置</text><rect x="870" y="350" width="200" height="65" class="box"/><text x="970" y="388.5" text-anchor="middle">网关适配</text><path d="M365 195 L245 350" class="edge" marker-end="url(#arrow)"/><path d="M415 195 L620 350" class="edge" marker-end="url(#arrow)"/><path d="M825 195 L295 350" class="edge" marker-end="url(#arrow)"/><path d="M875 195 L970 350" class="edge" marker-end="url(#arrow)"/>
+</svg>

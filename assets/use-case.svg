@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="850" viewBox="0 0 1280 850" role="img" aria-labelledby="title desc">
+<title id="title">用例图</title><desc id="desc">软件开发中等复杂度示例；仅用于模板学习，不代表已确认方案。</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="context-stroke"/></marker></defs>
+
+<style>
+text{font-family:Arial,"Noto Sans CJK SC","Microsoft YaHei",sans-serif;font-size:18px;fill:#25313A}
+.box{fill:white;stroke:#52616D;stroke-width:1.4}
+.line{fill:none;stroke:#52616D;stroke-width:1.6}
+.dashed{stroke-dasharray:6 5}.small{font-size:14px}.heading{font-size:26px;font-weight:600}
+.panel{fill:#F5F7FA;stroke:#CBD5DF;stroke-width:1}
+.guide{fill:none;stroke:#CBD5DF;stroke-width:1}
+.blue{stroke:#426B91}.purple{stroke:#786783}.teal{stroke:#477C80}.brown{stroke:#8A735C}
+.green{stroke:#327354}.red{stroke:#AA4E4E}.yellow{stroke:#926D20}
+.box.green{fill:#EDF5EF}.box.red{fill:#FAEEEE}.box.yellow{fill:#FBF5E5}
+.caption{paint-order:stroke;stroke:white;stroke-width:7px;stroke-linejoin:round}
+</style>
+<rect width="1280" height="850" fill="white"/>
+<text x="40" y="48" class="heading">用例图</text>
+<rect x="290" y="125" width="700" height="625" class="panel"/><text x="315" y="160" >模型服务平台</text><circle cx="120" cy="290" r="17" class="box"/><path d="M120 307 V355 M92 325 H148 M120 355 L92 390 M120 355 L148 390" class="line"/><text x="120" y="416" class="small" text-anchor="middle">独立登录用户</text><circle cx="1150" cy="290" r="17" class="box"/><path d="M1150 307 V355 M1122 325 H1178 M1150 355 L1122 390 M1150 355 L1178 390" class="line"/><text x="1150" y="416" class="small" text-anchor="middle">平台管理员</text><ellipse cx="515" cy="230" rx="135" ry="34" class="box purple"/><text x="515" y="235" class="small" text-anchor="middle">浏览模型信息</text><ellipse cx="515" cy="380" rx="135" ry="34" class="box purple"/><text x="515" y="385" class="small" text-anchor="middle">进行模型聊天</text><ellipse cx="515" cy="540" rx="135" ry="34" class="box purple"/><text x="515" y="545" class="small" text-anchor="middle">查看费用与账单</text><ellipse cx="810" cy="230" rx="135" ry="34" class="box purple"/><text x="810" y="235" class="small" text-anchor="middle">维护模型目录</text><ellipse cx="810" cy="380" rx="135" ry="34" class="box purple"/><text x="810" y="385" class="small" text-anchor="middle">管理调用权限</text><ellipse cx="810" cy="540" rx="135" ry="34" class="box purple"/><text x="810" y="545" class="small" text-anchor="middle">核对异常结算</text><ellipse cx="515" cy="680" rx="135" ry="34" class="box purple"/><text x="515" y="685" class="small" text-anchor="middle">选择模型</text><path d="M151 325 L380 230" class="line blue"/><path d="M151 325 L380 380" class="line blue"/><path d="M151 325 L380 540" class="line blue"/><path d="M1120 325 L945 230" class="line teal"/><path d="M1120 325 L945 380" class="line teal"/><path d="M1120 325 L945 540" class="line teal"/><path d="M650 380 L662 410 L662 625 L620 657" class="line purple dashed" marker-end="url(#arrow)"/><text x="605" y="600" class="small" text-anchor="middle">«include»</text>
+</svg>
