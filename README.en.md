@@ -1,6 +1,6 @@
 # qiudengs-svg-diagrams
 
-[简体中文](README.md)
+[Chinese](README.md)
 
 SVG drawing guidance, templates, and contrasting examples for AI coding assistants working on software requirements and system design. The focus is readable relationships: direct connections, clear grouping, consistent spacing, and restrained colors.
 
@@ -17,32 +17,17 @@ git clone https://github.com/qiudeng7/qiudengs-svg-diagrams.git \
   ~/.codex/skills/qiudengs-svg-diagrams
 ```
 
-If the target directory already exists, inspect it first and preserve local changes. Other tools supporting local skills can use their own skills directory.
-
-In an assistant that supports invoking skills by name, try:
+Write a prompt:
 
 ```text
-Use $qiudengs-svg-diagrams to draw a component architecture diagram.
-The user model catalog and chat endpoint both depend on identity and permissions.
-The catalog also depends on model configuration; the chat endpoint depends on
-a gateway adapter. Save the result to docs/diagrams/components.svg.
+Use $qiudengs-svg-diagrams to draw any moderately complex architecture diagram.
 ```
 
-Expect a standalone SVG file. Open it in a browser, or reference it from a Markdown page that supports SVG:
+You will get an SVG diagram, for example:
 
-```markdown
-![Component architecture](docs/diagrams/components.svg)
-```
+[![Component architecture](assets/components.svg)](assets/components.svg)
 
-Relative paths are resolved from the Markdown file's directory. If the assistant cannot invoke skills by name, ask it to read [SKILL.md](SKILL.md) and follow its instructions.
-
-## Documentation
-
-- [SKILL.md](SKILL.md): diagram selection, workflow, and delivery checks.
-- [Drawing rules](references/drawing-rules.md): connections, grouping, spacing, fixed palettes, and diagram semantics.
-- [SVG templates](assets/): readable, editable source files. Their example content is not an approved project design.
-
-## Diagram previews
+## Previews
 
 The [component architecture diagram](assets/components.svg) appears above. Expand the other seven templates below; click an image to open its source.
 
@@ -97,7 +82,7 @@ The [component architecture diagram](assets/components.svg) appears above. Expan
 
 ## Good and bad examples
 
-These examples show how layout affects readability. Visual neatness must not change business semantics. See the [drawing rules](references/drawing-rules.md#分组标识与关系布局) for details.
+These examples show how layout affects readability. Visual neatness must not change business semantics. See the [drawing rules](references/drawing-rules.md#group-labels-and-relationship-layout) for details.
 
 ### Group labels
 

@@ -80,7 +80,7 @@ git clone https://github.com/qiudeng7/qiudengs-svg-diagrams.git \
 
 ## 正反例
 
-这些例子展示布局如何影响阅读，不要求为了视觉整齐改变业务语义。详细说明见[绘图规则](references/drawing-rules.md#分组标识与关系布局)。
+这些例子展示布局如何影响阅读，不要求为了视觉整齐改变业务语义。详细说明见[绘图规则](references/drawing-rules.md#group-labels-and-relationship-layout)。
 
 ### 分组标题
 
