@@ -4,12 +4,12 @@
 
 - Use a white background, dark text, thin strokes, and the fixed muted palette. Start with 1–1.5-unit borders and rectangular primary nodes. Preserve semantic shapes such as use-case ellipses and decision diamonds.
 - Start around 1120 units wide, with 18-unit body text, 14-unit annotations, 26-unit titles, and 40-unit outer margins. Adjust for the actual display size.
-- Use system sans-serif fallbacks. Leave room for long names and multilingual text rather than relying on exact metrics from one font. Wrap with text/tspan and enlarge the container.
+- For editable text, use font fallbacks covering Windows, macOS, and Linux, with a generic family last. Leave room for long names and multilingual text rather than relying on exact metrics from one font. Wrap with text/tspan and enlarge the container. Follow [portability](portability.md) for font-independent delivery.
 - Keep the main flow in one direction. Prefer direct horizontal, vertical, or diagonal lines when unobstructed. Use two nearby, opposite-direction lines for round trips. Route around obstacles only when needed; do not add bends merely to keep lines orthogonal. Omit arrowheads for undirected associations.
 - End arrows at node boundaries. Keep connection labels away from intersections and body text. Make unavoidable crossings unambiguous about whether the lines connect.
 - Use the title to identify the topic. Keep the question being answered, scope, and detailed rules in adjacent prose. Do not add question subtitles, drawing footnotes, or color and line-style legends.
 - Color, grouping, and line style organize the design implicitly. Put necessary business meaning directly on nodes or connections, such as branch conditions, cardinalities, and «include».
-- Each SVG must contain xmlns, viewBox, a white background, styles, markers, title, desc, and aria-labelledby. Prefix IDs uniquely when inlining multiple diagrams on one page.
+- Each SVG must contain xmlns, viewBox, an explicit default background, title, desc, and aria-labelledby. Use markers when relationships need arrows. Put baseline colors, strokes, fonts, and sizes in presentation attributes; styles are optional enhancements. Prefix IDs uniquely when inlining multiple diagrams on one page.
 - Escape XML characters such as &amp;, &lt;, and &gt;. Do not use external fonts, images, CSS, scripts, or foreignObject.
 
 ## Color and visual hierarchy
@@ -123,6 +123,6 @@ Reference: [wireframe.svg](../assets/wireframe.svg).
 
 ## Validation and delivery
 
-Check business objects and relationships first, then XML structure, ID references, viewBox bounds, and text placement. Use available browser capabilities to inspect normal and reduced display sizes; disclose when preview is unavailable. Valid XML does not prove correct layout or semantics.
+Check business objects and relationships first, then XML structure, ID references, viewBox bounds, and text placement. Follow the [portability acceptance checks](portability.md#acceptance-checks): CSS disabled, requested themes, font fallback or outlined delivery, and an available second renderer. Use available browser capabilities to inspect normal and reduced display sizes; disclose when preview is unavailable. Valid XML does not prove correct layout or semantics.
 
-Deliver SVG source files without introducing conversion tools. Choose links or embedding according to the destination's support; do not promise unverified compatibility.
+Deliver SVG source files and, when font-independent sharing is required, outlined SVG exports made with already available tools. Choose links or embedding according to the destination's support; do not promise unverified compatibility.

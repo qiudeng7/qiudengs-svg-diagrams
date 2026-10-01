@@ -1,8 +1,21 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1280" height="500" viewBox="0 0 1280 500" role="img" aria-labelledby="title desc">
-<title id="title">反例：分组标题挤在内容与连线之间</title><desc id="desc">组件布局示例；文字说明见绘图规则文档。</desc>
-<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#426B91"/></marker></defs>
-<style>text{font:18px Arial,"Microsoft YaHei",sans-serif;fill:#25313A}.heading{font-size:26px;font-weight:600}.small{font-size:14px}.box{fill:white;stroke:#426B91;stroke-width:1.4}.panel{fill:#F5F7FA;stroke:#CBD5DF}.label{fill:#E9EEF3;stroke:#CBD5DF}.edge{fill:none;stroke:#426B91;stroke-width:1.6}</style>
-<rect width="1280" height="500" fill="white"/>
-<text x="40" y="48" class="heading">反例：分组标题挤在内容与连线之间</text>
-<rect x="40" y="145" width="1190" height="270" class="panel"/><text x="635" y="171" text-anchor="middle" class="small">应用接口与业务编排</text><rect x="280" y="280" width="260" height="65" class="box"/><text x="410" y="318.5" text-anchor="middle">用户模型目录</text><rect x="730" y="280" width="260" height="65" class="box"/><text x="860" y="318.5" text-anchor="middle">聊天请求入口</text><path d="M410 100 L410 280" class="edge" marker-end="url(#arrow)"/><path d="M635 100 L635 220" class="edge" marker-end="url(#arrow)"/><path d="M635 220 L860 280" class="edge" marker-end="url(#arrow)"/>
+  <title id="title">反例：分组标题挤在内容与连线之间</title>
+  <desc id="desc">组件布局示例；文字说明见绘图规则文档。</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#426B91" />
+    </marker>
+  </defs>
+  <style>text{font-family:Arial, 'Microsoft YaHei', 'PingFang SC', 'Noto Sans CJK SC', 'Source Han Sans CN', sans-serif;font-size:18px;fill:#25313A}.heading{font-size:26px;font-weight:600}.small{font-size:14px}.box{fill:white;stroke:#426B91;stroke-width:1.4}.panel{fill:#F5F7FA;stroke:#CBD5DF}.label{fill:#E9EEF3;stroke:#CBD5DF}.edge{fill:none;stroke:#426B91;stroke-width:1.6}</style>
+  <rect width="1280" height="500" fill="white" />
+  <text x="40" y="48" class="heading" font-size="26px" font-family="Arial, 'Microsoft YaHei', 'PingFang SC', 'Noto Sans CJK SC', 'Source Han Sans CN', sans-serif" fill="#25313A" font-weight="600">反例：分组标题挤在内容与连线之间</text>
+  <rect x="40" y="145" width="1190" height="270" class="panel" fill="#F5F7FA" stroke="#CBD5DF" />
+  <text x="635" y="171" text-anchor="middle" class="small" font-size="14px" font-family="Arial, 'Microsoft YaHei', 'PingFang SC', 'Noto Sans CJK SC', 'Source Han Sans CN', sans-serif" fill="#25313A">应用接口与业务编排</text>
+  <rect x="280" y="280" width="260" height="65" class="box" fill="white" stroke="#426B91" stroke-width="1.4" />
+  <text x="410" y="318.5" text-anchor="middle" font-size="18px" font-family="Arial, 'Microsoft YaHei', 'PingFang SC', 'Noto Sans CJK SC', 'Source Han Sans CN', sans-serif" fill="#25313A">用户模型目录</text>
+  <rect x="730" y="280" width="260" height="65" class="box" fill="white" stroke="#426B91" stroke-width="1.4" />
+  <text x="860" y="318.5" text-anchor="middle" font-size="18px" font-family="Arial, 'Microsoft YaHei', 'PingFang SC', 'Noto Sans CJK SC', 'Source Han Sans CN', sans-serif" fill="#25313A">聊天请求入口</text>
+  <path d="M410 100 L410 280" class="edge" marker-end="url(#arrow)" fill="none" stroke="#426B91" stroke-width="1.6" />
+  <path d="M635 100 L635 220" class="edge" marker-end="url(#arrow)" fill="none" stroke="#426B91" stroke-width="1.6" />
+  <path d="M635 220 L860 280" class="edge" marker-end="url(#arrow)" fill="none" stroke="#426B91" stroke-width="1.6" />
 </svg>

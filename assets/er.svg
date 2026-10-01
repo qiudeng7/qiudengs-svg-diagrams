@@ -1,9 +1,13 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1280" height="850" viewBox="0 0 1280 850" role="img" aria-labelledby="title desc">
-<title id="title">数据关系图</title><desc id="desc">软件开发中等复杂度示例；仅用于模板学习，不代表已确认方案。</desc>
-<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="context-stroke"/></marker></defs>
-
-<style>
-text{font-family:Arial,"Noto Sans CJK SC","Microsoft YaHei",sans-serif;font-size:18px;fill:#25313A}
+  <title id="title">数据关系图</title>
+  <desc id="desc">软件开发中等复杂度示例；仅用于模板学习，不代表已确认方案。</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#52616d" />
+    </marker>
+  </defs>
+  <style>
+text{font-family:Arial, 'Microsoft YaHei', 'PingFang SC', 'Noto Sans CJK SC', 'Source Han Sans CN', sans-serif;font-size:18px;fill:#25313A}
 .box{fill:white;stroke:#52616D;stroke-width:1.4}
 .line{fill:none;stroke:#52616D;stroke-width:1.6}
 .dashed{stroke-dasharray:6 5}.small{font-size:14px}.heading{font-size:26px;font-weight:600}
@@ -14,7 +18,60 @@ text{font-family:Arial,"Noto Sans CJK SC","Microsoft YaHei",sans-serif;font-size
 .box.green{fill:#EDF5EF}.box.red{fill:#FAEEEE}.box.yellow{fill:#FBF5E5}
 .caption{paint-order:stroke;stroke:white;stroke-width:7px;stroke-linejoin:round}
 </style>
-<rect width="1280" height="850" fill="white"/>
-<text x="40" y="48" class="heading">数据关系图</text>
-<rect x="60" y="160" width="290" height="155" class="box brown"/><text x="76" y="190" >用户</text><path d="M60 204 H350" class="line brown"/><text x="76" y="232" class="small">PK user_id</text><text x="76" y="259" class="small">email</text><text x="76" y="286" class="small">status</text><rect x="490" y="160" width="290" height="155" class="box brown"/><text x="506" y="190" >调用记录</text><path d="M490 204 H780" class="line brown"/><text x="506" y="232" class="small">PK call_id / FK user_id</text><text x="506" y="259" class="small">FK model_id</text><text x="506" y="286" class="small">settlement_status</text><rect x="920" y="160" width="290" height="155" class="box brown"/><text x="936" y="190" >模型</text><path d="M920 204 H1210" class="line brown"/><text x="936" y="232" class="small">PK model_id</text><text x="936" y="259" class="small">name / protocol</text><text x="936" y="286" class="small">enabled</text><rect x="60" y="520" width="290" height="155" class="box brown"/><text x="76" y="550" >钱包</text><path d="M60 564 H350" class="line brown"/><text x="76" y="592" class="small">PK, FK user_id</text><text x="76" y="619" class="small">balance</text><text x="76" y="646" class="small">currency</text><rect x="490" y="520" width="290" height="155" class="box brown"/><text x="506" y="550" >扣款流水</text><path d="M490 564 H780" class="line brown"/><text x="506" y="592" class="small">PK transaction_id</text><text x="506" y="619" class="small">FK call_id（唯一）</text><text x="506" y="646" class="small">FK user_id / amount</text><rect x="920" y="520" width="290" height="155" class="box brown"/><text x="936" y="550" >用量事件</text><path d="M920 564 H1210" class="line brown"/><text x="936" y="592" class="small">PK event_id</text><text x="936" y="619" class="small">FK call_id</text><text x="936" y="646" class="small">tokens / received_at</text><path d="M350 230 H490" class="line brown"/><text x="370" y="215" class="small" text-anchor="middle">1</text><text x="458" y="215" class="small" text-anchor="middle">0..N</text><path d="M780 230 H920" class="line brown"/><text x="812" y="215" class="small" text-anchor="middle">0..N</text><text x="898" y="215" class="small" text-anchor="middle">1</text><path d="M205 315 V520" class="line brown"/><text x="227" y="350" class="small" text-anchor="middle">1</text><text x="230" y="495" class="small" text-anchor="middle">0..1</text><path d="M635 315 V520" class="line brown"/><text x="655" y="350" class="small" text-anchor="middle">1</text><text x="665" y="496" class="small" text-anchor="middle">0..1</text><path d="M780 278 L1005 520" class="line brown"/><text x="806" y="266" class="small" text-anchor="middle">1</text><text x="1028" y="493" class="small" text-anchor="middle">0..N</text><path d="M350 590 H490" class="line brown"/><text x="375" y="575" class="small" text-anchor="middle">1</text><text x="460" y="575" class="small" text-anchor="middle">0..N</text>
+  <rect width="1280" height="850" fill="white" />
+  <text x="40" y="48" class="heading" font-family="Arial, 'Microsoft YaHei', 'PingFang SC', 'Noto Sans CJK SC', 'Source Han Sans CN', sans-serif" font-size="26px" fill="#25313A" font-weight="600">数据关系图</text>
+  <rect x="60" y="160" width="290" height="155" class="box brown" fill="white" stroke="#8A735C" stroke-width="1.4" />
+  <text x="76" y="190" font-family="Arial, 'Microsoft YaHei', 'PingFang SC', 'Noto Sans CJK SC', 'Source Han Sans CN', sans-serif" font-size="18px" fill="#25313A">用户</text>
+  <path d="M60 204 H350" class="line brown" fill="none" stroke="#8A735C" stroke-width="1.6" />
+  <text x="76" y="232" class="small" font-family="Arial, 'Microsoft YaHei', 'PingFang SC', 'Noto Sans CJK SC', 'Source Han Sans CN', sans-serif" font-size="14px" fill="#25313A">PK user_id</text>
+  <text x="76" y="259" class="small" font-family="Arial, 'Microsoft YaHei', 'PingFang SC', 'Noto Sans CJK SC', 'Source Han Sans CN', sans-serif" font-size="14px" fill="#25313A">email</text>
+  <text x="76" y="286" class="small" font-family="Arial, 'Microsoft YaHei', 'PingFang SC', 'Noto Sans CJK SC', 'Source Han Sans CN', sans-serif" font-size="14px" fill="#25313A">status</text>
+  <rect x="490" y="160" width="290" height="155" class="box brown" fill="white" stroke="#8A735C" stroke-width="1.4" />
+  <text x="506" y="190" font-family="Arial, 'Microsoft YaHei', 'PingFang SC', 'Noto Sans CJK SC', 'Source Han Sans CN', sans-serif" font-size="18px" fill="#25313A">调用记录</text>
+  <path d="M490 204 H780" class="line brown" fill="none" stroke="#8A735C" stroke-width="1.6" />
+  <text x="506" y="232" class="small" font-family="Arial, 'Microsoft YaHei', 'PingFang SC', 'Noto Sans CJK SC', 'Source Han Sans CN', sans-serif" font-size="14px" fill="#25313A">PK call_id / FK user_id</text>
+  <text x="506" y="259" class="small" font-family="Arial, 'Microsoft YaHei', 'PingFang SC', 'Noto Sans CJK SC', 'Source Han Sans CN', sans-serif" font-size="14px" fill="#25313A">FK model_id</text>
+  <text x="506" y="286" class="small" font-family="Arial, 'Microsoft YaHei', 'PingFang SC', 'Noto Sans CJK SC', 'Source Han Sans CN', sans-serif" font-size="14px" fill="#25313A">settlement_status</text>
+  <rect x="920" y="160" width="290" height="155" class="box brown" fill="white" stroke="#8A735C" stroke-width="1.4" />
+  <text x="936" y="190" font-family="Arial, 'Microsoft YaHei', 'PingFang SC', 'Noto Sans CJK SC', 'Source Han Sans CN', sans-serif" font-size="18px" fill="#25313A">模型</text>
+  <path d="M920 204 H1210" class="line brown" fill="none" stroke="#8A735C" stroke-width="1.6" />
+  <text x="936" y="232" class="small" font-family="Arial, 'Microsoft YaHei', 'PingFang SC', 'Noto Sans CJK SC', 'Source Han Sans CN', sans-serif" font-size="14px" fill="#25313A">PK model_id</text>
+  <text x="936" y="259" class="small" font-family="Arial, 'Microsoft YaHei', 'PingFang SC', 'Noto Sans CJK SC', 'Source Han Sans CN', sans-serif" font-size="14px" fill="#25313A">name / protocol</text>
+  <text x="936" y="286" class="small" font-family="Arial, 'Microsoft YaHei', 'PingFang SC', 'Noto Sans CJK SC', 'Source Han Sans CN', sans-serif" font-size="14px" fill="#25313A">enabled</text>
+  <rect x="60" y="520" width="290" height="155" class="box brown" fill="white" stroke="#8A735C" stroke-width="1.4" />
+  <text x="76" y="550" font-family="Arial, 'Microsoft YaHei', 'PingFang SC', 'Noto Sans CJK SC', 'Source Han Sans CN', sans-serif" font-size="18px" fill="#25313A">钱包</text>
+  <path d="M60 564 H350" class="line brown" fill="none" stroke="#8A735C" stroke-width="1.6" />
+  <text x="76" y="592" class="small" font-family="Arial, 'Microsoft YaHei', 'PingFang SC', 'Noto Sans CJK SC', 'Source Han Sans CN', sans-serif" font-size="14px" fill="#25313A">PK, FK user_id</text>
+  <text x="76" y="619" class="small" font-family="Arial, 'Microsoft YaHei', 'PingFang SC', 'Noto Sans CJK SC', 'Source Han Sans CN', sans-serif" font-size="14px" fill="#25313A">balance</text>
+  <text x="76" y="646" class="small" font-family="Arial, 'Microsoft YaHei', 'PingFang SC', 'Noto Sans CJK SC', 'Source Han Sans CN', sans-serif" font-size="14px" fill="#25313A">currency</text>
+  <rect x="490" y="520" width="290" height="155" class="box brown" fill="white" stroke="#8A735C" stroke-width="1.4" />
+  <text x="506" y="550" font-family="Arial, 'Microsoft YaHei', 'PingFang SC', 'Noto Sans CJK SC', 'Source Han Sans CN', sans-serif" font-size="18px" fill="#25313A">扣款流水</text>
+  <path d="M490 564 H780" class="line brown" fill="none" stroke="#8A735C" stroke-width="1.6" />
+  <text x="506" y="592" class="small" font-family="Arial, 'Microsoft YaHei', 'PingFang SC', 'Noto Sans CJK SC', 'Source Han Sans CN', sans-serif" font-size="14px" fill="#25313A">PK transaction_id</text>
+  <text x="506" y="619" class="small" font-family="Arial, 'Microsoft YaHei', 'PingFang SC', 'Noto Sans CJK SC', 'Source Han Sans CN', sans-serif" font-size="14px" fill="#25313A">FK call_id（唯一）</text>
+  <text x="506" y="646" class="small" font-family="Arial, 'Microsoft YaHei', 'PingFang SC', 'Noto Sans CJK SC', 'Source Han Sans CN', sans-serif" font-size="14px" fill="#25313A">FK user_id / amount</text>
+  <rect x="920" y="520" width="290" height="155" class="box brown" fill="white" stroke="#8A735C" stroke-width="1.4" />
+  <text x="936" y="550" font-family="Arial, 'Microsoft YaHei', 'PingFang SC', 'Noto Sans CJK SC', 'Source Han Sans CN', sans-serif" font-size="18px" fill="#25313A">用量事件</text>
+  <path d="M920 564 H1210" class="line brown" fill="none" stroke="#8A735C" stroke-width="1.6" />
+  <text x="936" y="592" class="small" font-family="Arial, 'Microsoft YaHei', 'PingFang SC', 'Noto Sans CJK SC', 'Source Han Sans CN', sans-serif" font-size="14px" fill="#25313A">PK event_id</text>
+  <text x="936" y="619" class="small" font-family="Arial, 'Microsoft YaHei', 'PingFang SC', 'Noto Sans CJK SC', 'Source Han Sans CN', sans-serif" font-size="14px" fill="#25313A">FK call_id</text>
+  <text x="936" y="646" class="small" font-family="Arial, 'Microsoft YaHei', 'PingFang SC', 'Noto Sans CJK SC', 'Source Han Sans CN', sans-serif" font-size="14px" fill="#25313A">tokens / received_at</text>
+  <path d="M350 230 H490" class="line brown" fill="none" stroke="#8A735C" stroke-width="1.6" />
+  <text x="370" y="215" class="small" text-anchor="middle" font-family="Arial, 'Microsoft YaHei', 'PingFang SC', 'Noto Sans CJK SC', 'Source Han Sans CN', sans-serif" font-size="14px" fill="#25313A">1</text>
+  <text x="458" y="215" class="small" text-anchor="middle" font-family="Arial, 'Microsoft YaHei', 'PingFang SC', 'Noto Sans CJK SC', 'Source Han Sans CN', sans-serif" font-size="14px" fill="#25313A">0..N</text>
+  <path d="M780 230 H920" class="line brown" fill="none" stroke="#8A735C" stroke-width="1.6" />
+  <text x="812" y="215" class="small" text-anchor="middle" font-family="Arial, 'Microsoft YaHei', 'PingFang SC', 'Noto Sans CJK SC', 'Source Han Sans CN', sans-serif" font-size="14px" fill="#25313A">0..N</text>
+  <text x="898" y="215" class="small" text-anchor="middle" font-family="Arial, 'Microsoft YaHei', 'PingFang SC', 'Noto Sans CJK SC', 'Source Han Sans CN', sans-serif" font-size="14px" fill="#25313A">1</text>
+  <path d="M205 315 V520" class="line brown" fill="none" stroke="#8A735C" stroke-width="1.6" />
+  <text x="227" y="350" class="small" text-anchor="middle" font-family="Arial, 'Microsoft YaHei', 'PingFang SC', 'Noto Sans CJK SC', 'Source Han Sans CN', sans-serif" font-size="14px" fill="#25313A">1</text>
+  <text x="230" y="495" class="small" text-anchor="middle" font-family="Arial, 'Microsoft YaHei', 'PingFang SC', 'Noto Sans CJK SC', 'Source Han Sans CN', sans-serif" font-size="14px" fill="#25313A">0..1</text>
+  <path d="M635 315 V520" class="line brown" fill="none" stroke="#8A735C" stroke-width="1.6" />
+  <text x="655" y="350" class="small" text-anchor="middle" font-family="Arial, 'Microsoft YaHei', 'PingFang SC', 'Noto Sans CJK SC', 'Source Han Sans CN', sans-serif" font-size="14px" fill="#25313A">1</text>
+  <text x="665" y="496" class="small" text-anchor="middle" font-family="Arial, 'Microsoft YaHei', 'PingFang SC', 'Noto Sans CJK SC', 'Source Han Sans CN', sans-serif" font-size="14px" fill="#25313A">0..1</text>
+  <path d="M780 278 L1005 520" class="line brown" fill="none" stroke="#8A735C" stroke-width="1.6" />
+  <text x="806" y="266" class="small" text-anchor="middle" font-family="Arial, 'Microsoft YaHei', 'PingFang SC', 'Noto Sans CJK SC', 'Source Han Sans CN', sans-serif" font-size="14px" fill="#25313A">1</text>
+  <text x="1028" y="493" class="small" text-anchor="middle" font-family="Arial, 'Microsoft YaHei', 'PingFang SC', 'Noto Sans CJK SC', 'Source Han Sans CN', sans-serif" font-size="14px" fill="#25313A">0..N</text>
+  <path d="M350 590 H490" class="line brown" fill="none" stroke="#8A735C" stroke-width="1.6" />
+  <text x="375" y="575" class="small" text-anchor="middle" font-family="Arial, 'Microsoft YaHei', 'PingFang SC', 'Noto Sans CJK SC', 'Source Han Sans CN', sans-serif" font-size="14px" fill="#25313A">1</text>
+  <text x="460" y="575" class="small" text-anchor="middle" font-family="Arial, 'Microsoft YaHei', 'PingFang SC', 'Noto Sans CJK SC', 'Source Han Sans CN', sans-serif" font-size="14px" fill="#25313A">0..N</text>
 </svg>

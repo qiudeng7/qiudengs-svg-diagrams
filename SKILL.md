@@ -9,7 +9,11 @@ Create reviewable SVG diagrams for software requirements and system design. Use 
 
 ## Output and dependencies
 
-Write standalone SVG directly, without installing tools or dependencies. Do not generate PNG files or provide conversion workflows. Use system font fallbacks; do not embed fonts or raster images.
+Write standalone SVG directly, without installing tools or dependencies. Deliver SVG, not raster images. Temporary browser screenshots are allowed for visual inspection. Do not embed fonts or raster images.
+
+The default drawing must remain readable with embedded CSS disabled: put concrete colors, strokes, and text metrics in SVG presentation attributes. Do not make essential rendering depend on CSS variables, `context-stroke`, or theme queries. Add requested dark-theme support as an optional override; unsupported viewers must retain the complete light version. Read [portability](references/portability.md) before choosing styles and fonts.
+
+Editable SVG uses cross-platform font fallbacks and generous text space. Font fallbacks do not guarantee identical layout or even installed glyph coverage. When the user needs reliable sharing across computers or independence from installed fonts, retain an editable source and deliver an SVG with text outlined as paths. Use an existing outline exporter such as [outline_svg.py](scripts/outline_svg.py); if unavailable, disclose the remaining font dependency instead of claiming portability.
 
 These are SVG style templates, not native draw.io files. Verify SVG support at the publishing destination separately: opening a file in a browser does not establish that a platform can embed it.
 
@@ -19,8 +23,8 @@ These are SVG style templates, not native draw.io files. Verify SVG support at t
 2. Read the relevant SVG source and [drawing rules](references/drawing-rules.md). Load only the templates needed for the task.
 3. Replace example content with actual business concepts. Arrange nodes and groups around direct, shared, and dedicated relationships before drawing connections. Reserve space for group labels. See [group labels and relationship layout](references/drawing-rules.md#group-labels-and-relationship-layout). Templates teach visual conventions, not approved project requirements or fixed layouts.
 4. Check meaning before layout. Split excessive content into separate diagrams instead of shrinking the text.
-5. Check XML and references. Use available browser preview capabilities to inspect rendering; if unavailable, disclose that no visual inspection was performed. Do not install dependencies for this step.
-6. Deliver SVG links and necessary accompanying notes about omitted scope and unresolved conditions.
+5. Check XML and references. Verify the CSS-disabled default, requested light/dark themes, and normal/reduced display sizes. For editable text, also preview a different available font; for outlined delivery, confirm that no text or font resources remain. When another SVG renderer is already available, inspect its output too. Do not install dependencies for validation. Follow the [portability acceptance checks](references/portability.md#acceptance-checks).
+6. Deliver SVG links and necessary accompanying notes about omitted scope and unresolved conditions. Name the viewers and modes actually checked; one browser preview does not establish compatibility with other viewers. Include the editable source when delivering outlined text.
 
 ## Diagram selection and templates
 
@@ -42,5 +46,5 @@ These are SVG style templates, not native draw.io files. Verify SVG support at t
 - Distinguish existing behavior, proposed designs, and unresolved items without relying on color alone.
 - Apply colors, grouping, and line styles consistently without explaining those design choices inside the diagram. Put necessary relationship labels, such as «include», on the relevant connection.
 - Keep the diagram title and business content. Place the question being answered, scope, and drawing explanations in accompanying documentation rather than subtitles or footnotes. Do not mix unrelated object lifecycles.
-- Use only static SVG shapes and text: no scripts, external resources, or foreignObject.
-- Include title, desc, viewBox, and self-contained styles.
+- Use only static SVG shapes and text or outlined text: no scripts, external resources, or foreignObject.
+- Include title, desc, viewBox, and presentation attributes sufficient for the default appearance. Optional styles may enhance that baseline.
