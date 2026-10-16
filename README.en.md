@@ -1,4 +1,4 @@
-# qiudengs-svg-diagrams
+# how-to-draw-svg-diagrams
 
 [Chinese](README.md)
 
@@ -14,13 +14,13 @@ Clone the repository into your local skills directory. For example, using this p
 
 ```bash
 git clone https://github.com/qiudeng7/qiudengs-svg-diagrams.git \
-  ~/.codex/skills/qiudengs-svg-diagrams
+  ~/.codex/skills/how-to-draw-svg-diagrams
 ```
 
 Write a prompt:
 
 ```text
-Use $qiudengs-svg-diagrams to draw any moderately complex architecture diagram.
+Use $how-to-draw-svg-diagrams to draw any moderately complex architecture diagram.
 ```
 
 You will get an SVG diagram, for example:

@@ -1,9 +1,9 @@
 ---
-name: qiudengs-svg-diagrams
+name: how-to-draw-svg-diagrams
 description: Create standalone SVG diagrams with minimal shapes, direct connections, and muted colors for software requirements and system design. Use for context, use-case, flow, state, sequence, data relationship, component, and wireframe diagrams. Not for raster images or data charts.
 ---
 
-# Qiudeng's SVG Diagrams
+# How to Draw SVG Diagrams
 
 Create reviewable SVG diagrams for software requirements and system design. Use simple shapes, a white background, readable text, direct connections, and muted colors.
 

@@ -1,4 +1,4 @@
-# qiudengs-svg-diagrams
+# how-to-draw-svg-diagrams
 
 [English](README.en.md)
 
@@ -14,13 +14,13 @@
 
 ```bash
 git clone https://github.com/qiudeng7/qiudengs-svg-diagrams.git \
-  ~/.codex/skills/qiudengs-svg-diagrams
+  ~/.codex/skills/how-to-draw-svg-diagrams
 ```
 
 写提示词:
 
 ```text
-使用 $qiudengs-svg-diagrams，随意画一个中等复杂度的架构图。
+使用 $how-to-draw-svg-diagrams，随意画一个中等复杂度的架构图。
 ```
 
 然后你会得到一个 svg 格式的图，例如[![系统上下文图](assets/components.svg)](assets/components.svg)
